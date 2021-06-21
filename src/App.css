@@ -2,6 +2,26 @@
   transition: all 0.3s ease-in-out;
 }
 
+
+/*FONT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+h1,
+h2,
+h3,
+p{
+    color: black;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto 0;
+}
+
+.App{
+  width: clamp(300px, 30vw, 30vw);
+  margin: 0 auto;
+  margin-top: 20vh;
+}
 label{
   text-transform: uppercase;
   color: grey;
@@ -23,7 +43,9 @@ input,
 textarea,
 label{
   display: block;
-  width: clamp(400px, 30vw, 30vw);
+  margin-left: 1em;
+  font-family: 'Montserrat', sans-serif;
+  width: clamp(250px, 22vw, 22vw);
 }
 textarea:hover, 
 input:hover{
@@ -37,7 +59,7 @@ textarea::placeholder{
 input[type="submit"]{
   text-transform: uppercase;
   font-weight: 300;
-  background: darkblue;
+  background: rgba(71,140,250,1.0);
   color: white;
   width: 10rem;
   height: 2.25rem;
@@ -46,3 +68,39 @@ input[type="submit"]{
   outline: none;
   cursor: pointer;
 }
+
+.note{
+  border: 1px solid rgba(206,224,252,1.0);
+  border-radius: 10px;
+  margin: 1vw;
+  padding: 1.2em;
+}
+
+#notesContainer{
+  padding: 1vw 2vw;
+}
+
+.noteStamp{
+  display: flex;
+  margin-bottom: 0.5vw;
+}
+
+.noteStamp img{
+      height: 1.5em;
+      transform: rotate(-45deg);
+      width: auto;
+      margin-top: -0.5em;
+      margin-right: 1em;
+}
+
+.noteStamp p{
+      font-size: clamp(12px, 0.7em, 0.7em);
+  }
+
+
+  .coloredHeader{
+    background-color: rgba(71,140,250,1.0);
+    color: white;
+    width: 100%;
+    padding: 3vh 0 1vh 2vw;
+    }
